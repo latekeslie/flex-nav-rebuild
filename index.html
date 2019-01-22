@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+  </head>
+  <body>
+
+    <div class="nav__outer__container">
+      <nav class="nav__container -toggle-fixed-mobile">
+        <!-- <a href="#" class="skip-nav">skip nav</a> -->
+          <!-- <a href="#" id="toggle">Slide Toggle</a> -->
+
+
+          <button class="burger" data-burger data-toggle id="toggle">
+            <span class="burger__text">Menu</span>
+            <i class="burger__icon" role="presentation">
+              <span class="burger__icon__bar -top"></span>
+              <span class="burger__icon__bar -middle"></span>
+              <span class="burger__icon__bar -bottom"></span>
+            </i>
+          </button>
+
+        <div class="nav__wrapper" id="toggleMe">
+
+          <div class="nav__primary__outer" data-primary-nav>
+
+            <ul class="nav__primary__inner" >
+              <li class="nav__primary__item">
+                <a class="link main-text" href="#">One</a>
+              </li>
+              <li class="nav__primary__item">
+                <a href="#" class="link main-text">Two</a>
+              </li>
+
+              <a href="#">
+                <picture class="picture">
+                  <source media="(min-width: 1000px)" srcset="https://googlechrome.github.io/samples/picture-element/images/kitten-large.png">
+                  <source media="(min-width: 450px)" srcset="https://googlechrome.github.io/samples/picture-element/images/kitten-medium.png">
+                  <!-- img tag for browsers that do not support picture element -->
+                  <img src="https://googlechrome.github.io/samples/picture-element/images/kitten-small.png" alt="a cute kitten" class="picture">
+                </picture>
+              </a>
+
+              <li class="nav__primary__item">
+                <a href="#" class="link main-text">Three</a>
+              </li>
+              <li class="nav__primary__item">
+                <a href="#" class="link main-text">Four</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav__secondary__outer">
+            <ul class="nav__secondary__inner">
+              <div class="left">
+                <li class="nav__secondary__item"><a href="#" class="link secondary-text">AAA</a></li>
+                <li class="nav__secondary__item"><a href="#" class="link secondary-text">BBB</a></li>
+                <li class="nav__secondary__item"><a href="#" class="link secondary-text">CCC</a></li>
+              </div>
+              <div class="right">
+                <li class="nav__secondary__item"><a href="#" class="link secondary-text"><button>DDD</button></a></li>
+                <li>
+                  <div class="search-container">
+                    <input type="search">
+                  </div>
+                </li>
+              </div>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+
+
+  </body>
+  <!-- <script type="text/javascript" src="forEach.js"></script> -->
+  <script type="text/javascript" src="index.js"></script>
+</html>

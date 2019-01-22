@@ -1,0 +1,130 @@
+body {
+  height: 200rem;
+}
+.main-text {
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.secondary-text {
+  color: #252525;
+  font-size: 1.25rem;
+}
+.picture {
+  max-width: 250px;
+}
+
+.nav__outer__container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav__container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 90%;
+}
+
+/* .skip-nav {
+  position: absolute;
+  opacity: 0;
+  top: 999px;
+} */
+
+.nav__primary__outer {
+  background: tomato;
+  color: antiqueWhite;
+}
+.nav__primary__inner {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.link {
+  font-family: sans-serif;
+  padding: 0 1.5rem;
+  text-decoration: none;
+}
+
+.nav__secondary__inner {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.burger {
+  float: right;
+  margin: 1rem;
+}
+
+#toggleMe {
+    -webkit-transition: height .25s ease;
+         -o-transition: height .25s ease;
+            transition: height .25s ease;
+    overflow: hidden;
+}
+
+#toggleMe:not(.active) {
+    display: none;
+}
+
+.nav__wrapper {
+  height: 0;
+}
+
+@media only screen and (min-width: 950px) {
+  .nav__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .mobile-header {
+    display: none;
+  }
+
+  .nav__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .nav__primary__inner {
+   align-items: center;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 0;
+  }
+  .nav__secondary__inner {
+   align-items: center;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 0;
+  }
+  .left {
+    display: flex;
+  }
+  .right {
+    display: flex;
+  }
+  .nav__primary__outer {
+    transition: background 1s ease;
+    transition: margin-top .5s cubic-bezier(.1,1.21,.93,.88);
+    margin-top: 0;
+  }
+  .nav__primary__outer.-stuck {
+    background: MediumSeaGreen;
+    margin-top: -4rem;
+    z-index: 1;
+  }
+
+  .burger {
+    display: none;
+  }
+
+}
+
+/* //this will toggle when burger X is clicked */
+/* .-toggle-fixed-mobile{
+  position: fixed;
+  width: 100%;
+} */
